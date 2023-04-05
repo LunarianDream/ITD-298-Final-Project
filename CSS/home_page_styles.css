@@ -48,6 +48,11 @@ article {
     text-decoration: underline;
     text-decoration-color: var(--violet);
 }
+.icon-frame {
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+}
 
 .icon-frame > img {
     height: 10vh;
@@ -240,10 +245,14 @@ article {
         margin-top: 2em;
     }
 
+    .icon-frame {
+        min-width: 200px;
+    }
+
     .icon-frame > img {
-        height: auto;
-        max-width: 200px;
-        width: 20vw;
+        margin: auto;
+        height: 100px;
+        width: 100px;
     }
 
 }
@@ -354,11 +363,15 @@ article {
         flex-direction: row;
         font-size: 1em;
         gap: 0;
+        height: auto;
+    }
+
+    .icon-frame {
+        max-width: 200px;
     }
 
     .icon-frame > img {
-        height: auto;
-        max-width: 200px;
-        width: 20vw;
+        width: auto;
+        height: 100px;
     }
 }

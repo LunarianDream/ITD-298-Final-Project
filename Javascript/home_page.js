@@ -66,6 +66,8 @@ let trackCarousel = () => {
 
 };
 
+/* Information Blocks */
+
 for (let i = 0; i < seeMore.length; i++) {
     seeMore[i].addEventListener('click', () => {
         seeMore[i].style.height = 'auto';
