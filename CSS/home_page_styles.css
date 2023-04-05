@@ -48,6 +48,42 @@ article {
     text-decoration: underline;
     text-decoration-color: var(--violet);
 }
+
+/* Specialties */
+
+#specialties {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    width: 100%;
+}
+
+.specialty {
+    background-color: var(--tan);
+    border-radius: 10%;
+    margin: 1em;
+    min-width: 100px;
+    padding: 1em;
+    text-align: center;
+    width: 15%;
+}
+
+.specialty h3 {
+    font-size: 1em;
+    padding-top: .5em;
+
+}
+
+.specialty-frame > img {
+    width: 100%;
+
+}
+
+/* Basic Info */
+
 .icon-frame {
     display: flex;
     flex-direction: row;
@@ -58,7 +94,8 @@ article {
     height: 10vh;
 }
 
-#health, #products, #luxury {
+.info-card {
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     font-size: 1em;
@@ -69,7 +106,7 @@ article {
 }
 
 
-#health > div, #products > div, #luxury > div {
+.info-card > div {
     text-align: center;
     padding: 1em;
     width: 100%;
@@ -81,8 +118,6 @@ article {
 
 #health > div {
     background-color: var(--violet);
-    padding: 1em;
-    width: 100%;
 }
 
 #products {
@@ -208,6 +243,12 @@ article {
         list-style: none;
     }
 
+    /* Specialties */
+
+    #specialties {
+    margin-top: 2em;
+}
+
     /* Introduction */
 
     #introduction {
@@ -231,7 +272,7 @@ article {
 
     /* Basic Info */
 
-    #health, #products, #luxury {
+    .info-card {
         display: flex;
         flex-direction: row;
         font-size: 1em;
@@ -246,13 +287,12 @@ article {
     }
 
     .icon-frame {
-        min-width: 200px;
+        max-width: 200px;
     }
 
     .icon-frame > img {
-        margin: auto;
+        width: auto;
         height: 100px;
-        width: 100px;
     }
 
 }
@@ -339,6 +379,16 @@ article {
         list-style: none;
     }
 
+    /* Specialities */
+
+    #specialities {
+        margin-top: 2em;
+    }
+
+    .specialty h3 {
+        font-size: 1.5em;
+    }
+
     /* Introduction */
 
     #introduction {
@@ -358,7 +408,7 @@ article {
         width: 100%;
     }
 
-    #health, #products, #luxury {
+    .info-card {
         display: flex;
         flex-direction: row;
         font-size: 1em;

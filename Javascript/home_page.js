@@ -20,7 +20,7 @@ let counter = 0;
 
 /* ========== Sections ========== */
 
-let seeMore = document.querySelectorAll('section');
+let seeMore = document.querySelectorAll('.info-card');
 
 
 
@@ -95,9 +95,9 @@ prevBtn.addEventListener('click', () => {
 
 carouselNav.addEventListener('click', e => {
     let slideBtn = e.target.closest('.slide-btn');
+    let nextSiblingButton = slideBtn.nextElementSibling;
+    let prevSiblingButton = slideBtn.previousElementSibling;
+    nextSiblingButton.classList.remove('selected');
+    prevSiblingButton.classList.remove('selected');
     slideBtn.classList.add('selected');
-    siblingButtons.classList.remove('selected');
-    siblingButtons.classList.remove('selected');
-
-    console.log(siblingButtons);
 });
