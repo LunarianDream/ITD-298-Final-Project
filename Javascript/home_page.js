@@ -12,10 +12,10 @@ let slideBtns = document.querySelectorAll('.slide-btn');
 /* ========== Image Slides ========== */
 
 let imageSlides = document.querySelectorAll('.image-slide');
-let slideWidth = imageSlides[0].getBoundingClientRect().width;
+let imageWidth = imageSlides[0].getBoundingClientRect().width;
 
 let imageOffset = 0;
-let imageWidth = slideWidth;
+// let imageWidth = slideWidth;
 let counter = 0;
 
 /* ========== Sections ========== */
@@ -93,11 +93,20 @@ prevBtn.addEventListener('click', () => {
 
 });
 
-carouselNav.addEventListener('click', e => {
-    let slideBtn = e.target.closest('.slide-btn');
-    let nextSiblingButton = slideBtn.nextElementSibling;
-    let prevSiblingButton = slideBtn.previousElementSibling;
-    nextSiblingButton.classList.remove('selected');
-    prevSiblingButton.classList.remove('selected');
-    slideBtn.classList.add('selected');
-});
+// carouselNav.addEventListener('click', e => {
+//     let slideBtn = e.target.closest('.slide-btn');
+//     let nextSiblingButton = slideBtn.nextElementSibling;
+//     let prevSiblingButton = slideBtn.previousElementSibling;
+//     nextSiblingButton.classList.remove('selected');
+//     prevSiblingButton.classList.remove('selected');
+//     slideBtn.classList.add('selected');
+// });
+
+for (let i = 0; i < slideBtns.length; i++) {
+    slideBtns[i].addEventListener('click', () => {
+        imageOffset = imageWidth * -i;
+        counter = i
+        moveSlide();
+        trackCarousel();
+    });
+};
