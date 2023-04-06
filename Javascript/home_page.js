@@ -39,7 +39,7 @@ let moveSlide = function () {
     }
 
 
-    if (imageOffset <= imageWidth * -5) {
+    if (imageOffset <= imageWidth * -(imageSlides.length - 1)) {
         nextBtn.style.display = 'none';
     } else {
         nextBtn.style.display = 'block';
