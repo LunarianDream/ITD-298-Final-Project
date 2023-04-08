@@ -293,6 +293,7 @@ article {
 
     .icon-frame {
         max-width: 200px;
+        min-width: 150px;
     }
 
     .icon-frame > img {
@@ -308,7 +309,10 @@ article {
 @media only screen and (min-width: 1080px) {
 
     header {
+        background-color: transparent;
         width: 100vw;
+        position: absolute;
+        top: 0;
     }
     
     #carousel-frame {
