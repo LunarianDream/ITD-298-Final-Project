@@ -4,7 +4,7 @@ article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1em;
+    margin: 0
 }
 
 #introduction {
@@ -167,12 +167,8 @@ article {
 
     /* Image Carousel */
 
-    #carousel-frame, #carousel-controls {
-        display: block; 
-        margin-left: 1em;
-    }
-
     #carousel-frame {
+        display: block; 
         margin-bottom: .5em;
         position: relative;
     }
@@ -190,11 +186,20 @@ article {
         height: 100%;
         object-fit: cover;
         width: 500px;
+        transition: transform 600ms;
+    }
+
+    #carousel-navigation {
+        position: absolute;
+        bottom: 0;
+        left: 35%;
+        z-index: 99;
     }
 
     .slide-btn {
         background-color: var(--tan);
         clip-path: circle(50%);
+        cursor: pointer;
         width: 20px;
         height: 20px;
     }
@@ -252,7 +257,7 @@ article {
     /* Introduction */
 
     #introduction {
-        margin: .5em;
+        margin: 3em .5em .5em .5em;
     }
     
     .info-frame {
@@ -301,16 +306,24 @@ article {
 ================================================ */
 
 @media only screen and (min-width: 1080px) {
-    
-    #carousel-frame, #carousel-controls {
-        display: block; 
-        margin-left: 1em;
-    }
 
+    header {
+        width: 100vw;
+    }
+    
     #carousel-frame {
+        display: block; 
         margin-bottom: .5em;
         position: relative;
-        
+    }
+
+    .carousel-overlay {
+        background-color: var(--violet);
+        height: 100%;
+        opacity: .5;
+        position: absolute;
+        width: 100vw;
+        z-index: 99;
     }
 
     picture {
@@ -318,14 +331,23 @@ article {
     }
 
     #image-frame {
-        width: 700px;
+        height: 90vh;
+        width: 100vw;
         overflow: hidden;
     }
 
     .image-slide {
         height: 100%;
         object-fit: cover;
-        width: 700px;
+        transition: transform 600ms;
+        width: 100vw;
+    }
+
+    #carousel-navigation {
+        position: absolute;
+        bottom: 0;
+        left: 45%;
+        z-index: 99;
     }
 
     .slide-btn {
@@ -341,7 +363,7 @@ article {
         top: 50%;
         /* transform: translateY(-50%); */
         width: auto;
-        z-index: 1;
+        z-index: 99;
     }
 
     .carousel-button:hover {
@@ -349,11 +371,11 @@ article {
     }
 
     .next-btn {
-        right: -33px;
+        right: 30px;
     }
 
     .prev-btn {
-        left: -33px;
+        left: 30px;
     }
 
 
@@ -392,7 +414,7 @@ article {
     /* Introduction */
 
     #introduction {
-        margin: .5em;
+        margin: 3em .5em .5em .5em;
     }
     
     .info-frame {

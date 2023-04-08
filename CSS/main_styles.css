@@ -13,10 +13,12 @@
 }
 
 body {
+    background-color: var(--whitish-grey);
     color: var(--black-purple);
     font-family: 'Farro', sans-serif;
     font-size: 18px;
     position: relative;
+    overflow-x: hidden;
 }
 
 header, footer {
@@ -33,8 +35,6 @@ header > h1 {
 
 .logo-frame {
     margin: 10px;
-    text-align: right;
-    width: 30%;
 }
 
 .logo-frame > img {
@@ -236,9 +236,8 @@ address {
 
 @media only screen and (min-width: 1080px) {
 
-
     header {
-        background-color: white;
+        background-color: transparent;
     }
 
     header > h1 {
@@ -246,6 +245,10 @@ address {
         font-weight: 100;
         margin-top: 1%;
         text-shadow: 0px 5px 5px black;
+    }
+
+    .logo-frame {
+        display: none;
     }
 
     .logo-frame > img {
