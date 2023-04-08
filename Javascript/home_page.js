@@ -66,6 +66,19 @@ let trackCarousel = () => {
 
 };
 
+setInterval( () => {
+        if (counter == (imageSlides.length - 1)) {
+            counter = -1;
+            imageOffset = imageWidth;
+        } else {
+            imageOffset = imageOffset - imageWidth
+            counter++
+            moveSlide();
+            trackCarousel();
+        };
+    }
+, 5000);
+
 /* Information Blocks */
 
 for (let i = 0; i < seeMore.length; i++) {
@@ -76,6 +89,10 @@ for (let i = 0; i < seeMore.length; i++) {
 };
 
 /* ========== Events ========== */ 
+
+document.addEventListener('DOMCONTENTLOADED', () => {
+    carouselTimer();
+});
 
 nextBtn.addEventListener('click', () => {
     imageOffset = imageOffset - imageWidth;
