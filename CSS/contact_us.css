@@ -73,11 +73,17 @@ p {
 
 @media only screen and (min-width: 1080px) {
 
+    main {
+        margin-inline: 1em;
+    }
+
     .profile {
+        grid-column: 1/-1;
         flex-direction: row;
     }
 
     .biography {
+        align-self: center;
         width: 75%;
     }
 
