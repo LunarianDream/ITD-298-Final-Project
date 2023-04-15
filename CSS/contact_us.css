@@ -22,6 +22,10 @@ img {
     padding-top: .5em;
 }
 
+.profile:last-of-type {
+    border: none;
+}
+
 figure {
     display: flex;
     flex-direction: column;
@@ -50,7 +54,7 @@ figcaption {
 p {
     font-family: 'Cormorant', serif;
     line-height: 2em;
-    padding: 1em;
+    padding: 1em 1.5em 1em 1.5em;
     text-indent: 1em;
 }
 
