@@ -6,11 +6,11 @@ main {
 img {
     width: 100%;
 }
-
+    
 section {
     border-bottom: 5px solid var(--lime-green);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 1em;
     justify-content: space-between;
     padding-bottom: 1em;
@@ -18,25 +18,11 @@ section {
     padding-top: .5em;
 }
 
-.biography {
-    background-color: var(--tan);
-    border-radius: 20px;
-    width: 75%;
-}
-
-p {
-    font-family: 'Cormorant', serif;
-    line-height: 2em;
-    padding: 1em;
-    text-indent: 1em;
-}
-
 figure {
     display: flex;
     flex-direction: column;
     gap: .5em;
     align-items: center;
-    width: 25%;
 }
 
 figcaption {
@@ -45,11 +31,23 @@ figcaption {
     font-weight: 400;
 }
 
+.biography {
+    background-color: var(--tan);
+    border-radius: 20px;
+}
+
 .profile-info {
     display: flex;
     flex-direction: column;
     gap: .5em;
     align-items: center;
+}
+
+p {
+    font-family: 'Cormorant', serif;
+    line-height: 2em;
+    padding: 1em;
+    text-indent: 1em;
 }
 
 .profile-info > h2 {
@@ -63,4 +61,32 @@ figcaption {
     color: var(--violet);
     font-size: .75em;
     text-decoration: none;
+}
+
+@media only screen and (min-width: 1080px) {
+
+    section {
+        border-bottom: 5px solid var(--lime-green);
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        justify-content: space-between;
+        padding-bottom: 1em;
+        padding-inline: .5em;
+        padding-top: .5em;
+    }
+
+    .biography {
+        background-color: var(--tan);
+        border-radius: 20px;
+        width: 75%;
+    }
+
+    figure {
+        display: flex;
+        flex-direction: column;
+        gap: .5em;
+        align-items: center;
+        width: 25%;
+    }
 }
