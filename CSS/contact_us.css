@@ -7,7 +7,7 @@ img {
     width: 100%;
 }
     
-section {
+.profile {
     border-bottom: 5px solid var(--lime-green);
     display: flex;
     flex-direction: column;
@@ -65,28 +65,15 @@ p {
 
 @media only screen and (min-width: 1080px) {
 
-    section {
-        border-bottom: 5px solid var(--lime-green);
-        display: flex;
+    .profile {
         flex-direction: row;
-        gap: 1em;
-        justify-content: space-between;
-        padding-bottom: 1em;
-        padding-inline: .5em;
-        padding-top: .5em;
     }
 
     .biography {
-        background-color: var(--tan);
-        border-radius: 20px;
         width: 75%;
     }
 
     figure {
-        display: flex;
-        flex-direction: column;
-        gap: .5em;
-        align-items: center;
         width: 25%;
     }
 }
