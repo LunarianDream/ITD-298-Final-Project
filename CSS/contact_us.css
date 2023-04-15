@@ -1,0 +1,66 @@
+main {
+    gap: 2em;
+    margin-inline: .5em;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    border-bottom: 5px solid var(--lime-green);
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: space-between;
+    padding-bottom: 1em;
+    padding-inline: .5em;
+    padding-top: .5em;
+}
+
+.biography {
+    background-color: var(--tan);
+    border-radius: 20px;
+    width: 75%;
+}
+
+p {
+    font-family: 'Cormorant', serif;
+    line-height: 2em;
+    padding: 1em;
+    text-indent: 1em;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    align-items: center;
+    width: 25%;
+}
+
+figcaption {
+    color: var(--violet);
+    font-size: .75em;
+    font-weight: 400;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    align-items: center;
+}
+
+.profile-info > h2 {
+    font-variant: small-caps;
+    font-weight: 100;
+    text-decoration: underline;
+    text-decoration-color: var(--violet);
+}
+
+.profile-info > a {
+    color: var(--violet);
+    font-size: .75em;
+    text-decoration: none;
+}
