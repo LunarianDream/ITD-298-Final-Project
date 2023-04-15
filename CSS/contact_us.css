@@ -6,6 +6,10 @@ main {
 img {
     width: 100%;
 }
+
+.team-image {
+    width: 100vw;
+}
     
 .profile {
     border-bottom: 5px solid var(--lime-green);
