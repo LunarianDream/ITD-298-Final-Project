@@ -21,6 +21,10 @@ body {
     overflow-x: hidden;
 }
 
+button {
+    cursor: pointer;
+}
+
 header, footer {
     background-color: var(--lime-green);
     z-index: 100;
@@ -98,7 +102,7 @@ header > h1 {
 
 .menu-overlay {
     background-color: white;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(50%);
     display: none;
     height: 100vh;
     opacity: .5;
