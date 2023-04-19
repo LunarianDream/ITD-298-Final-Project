@@ -6,7 +6,7 @@ main {
 form {
     background-color: var(--tan);
     margin-inline: auto;
-    width: 100%
+    width: 90%
 }
 
 fieldset {
@@ -76,17 +76,14 @@ textarea {
     
 
     form {
-        width: 75vw;
+        width: 100vw;
     }
+
     form > fieldset {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 1em;
-    }
-
-    fieldset fieldset {
-        width: 100%;
     }
 
     .form-row {

@@ -4,11 +4,16 @@ main {
 }
 
 img {
-    width: 100%;
+    width: 60%;
+    margin-inline: auto;
 }
 
 .team-image {
     width: 100vw;
+}
+
+.profile-pic {
+    text-align: center;
 }
     
 .profile {
@@ -75,6 +80,10 @@ p {
 
     main {
         margin-inline: 1em;
+    }
+
+    img {
+        width: 100%;
     }
 
     .profile {
