@@ -61,7 +61,7 @@ main {
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
     justify-content: center;
 }
 

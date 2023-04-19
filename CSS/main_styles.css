@@ -21,6 +21,14 @@ body {
     overflow-x: hidden;
 }
 
+img {
+    width: 100%;
+}
+
+p {
+    font-family: 'Cormorant', serif;
+}
+
 button {
     cursor: pointer;
 }
@@ -37,16 +45,20 @@ header > h1 {
     width: 100%;
 }
 
+h2 {
+    font-family: 'Farro', sans-serif;
+    font-weight: 300;
+    text-decoration: underline;
+    text-decoration-color: var(--violet);
+    transition: text-decoration ease-in-out 500ms;
+}
+
 .logo-frame {
     margin: 10px;
 }
 
 .logo-frame > img {
     width: 100px;
-}
-
-.mascot {
-    width: 100%;
 }
 
 /* ======== Top Navigation Styles ======== */ 

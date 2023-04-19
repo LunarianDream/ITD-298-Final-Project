@@ -1,0 +1,107 @@
+main {
+    margin-inline: 1em;
+    gap: 1em;
+}
+
+form {
+    background-color: var(--tan);
+    margin-inline: auto;
+    width: 100%
+}
+
+fieldset {
+    border: 2px solid var(--black-purple);
+    padding: 1em;
+}
+
+.form-row > fieldset {
+    border-style: dotted;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: .5em;
+}
+
+.input-row {
+    /* margin-inline: .5em; */
+    display: flex;
+    align-items: flex-end;
+    gap: .25em;
+}
+
+legend {
+    background-color: var(--violet);
+    border-radius: 5px;
+    font-size: .8em;
+    font-weight: 300;
+    padding: .5em 1em;
+    text-decoration: underline;
+    text-decoration-color: var(--lime-green);
+    text-decoration-thickness: 3px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    margin-inline: auto;
+}
+
+label {
+    font-size: .7em;
+    font-weight: 100
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="tel"], select {
+    background-color: var(--whitish-grey);
+    border: 2px solid var(--violet);
+    border-radius: 5px;
+    padding: .5em;
+    width: 200px;
+}
+
+#MiddleInitial {
+    width: 50px;
+}
+
+textarea {
+    background-color: var(--whitish-grey);
+    border: 2px solid var(--violet);
+    border-radius: 5px;
+    height: 200px;
+    padding: .5em;
+}
+
+@media only screen and (min-width: 600px) {
+    
+
+    form {
+        width: 75vw;
+    }
+    form > fieldset {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+
+    fieldset fieldset {
+        width: 100%;
+    }
+
+    .form-row {
+        margin-inline: 0;
+    }
+
+    textarea {
+        width: 500px;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+
+    form {
+        width: 80vw;
+    }
+
+}
