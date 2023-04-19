@@ -1,5 +1,4 @@
 main {
-    margin-inline: 1em;
     gap: 1em;
 }
 
@@ -76,7 +75,7 @@ textarea {
     
 
     form {
-        width: 100vw;
+        width: 100%;
     }
 
     form > fieldset {
