@@ -21,9 +21,9 @@ body {
     overflow-x: hidden;
 }
 
-img {
+/* img {
     width: 100%;
-}
+} */
 
 p {
     font-family: 'Cormorant', serif;
@@ -59,6 +59,10 @@ h2 {
 
 .logo-frame > img {
     width: 100px;
+}
+
+.mascot {
+    width: 100%;
 }
 
 /* ======== Top Navigation Styles ======== */ 

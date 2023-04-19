@@ -63,6 +63,7 @@ main {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
     justify-content: center;
+    margin-inline: 1em;
 }
 
 #carousel-frame, #carousel-controls {

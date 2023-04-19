@@ -95,6 +95,7 @@ article {
 }
 
 .info-card {
+    border: 3px solid var(--black-purple);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -112,25 +113,14 @@ article {
     width: 100%;
 }
 
-#health {
-    border: 5px solid var(--lime-green);
-}
-
 #health > div {
     background-color: var(--violet);
 }
 
-#products {
-    border: 5px solid var(--violet);
-}
 
 #products > div {
     background-color: var(--tan);
 
-}
-
-#luxury {
-    border: 5px solid var(--tan);
 }
 
 #luxury > div {
