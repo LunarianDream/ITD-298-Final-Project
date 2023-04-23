@@ -127,9 +127,9 @@ article {
     background-color: var(--whitish-grey);
 }
 
-#health p, #products p, #luxury p {
+.info-card p {
     font-family: 'Cormorant', serif;
-    padding: 0 1em 1em 1em;
+    padding: 1em;
 }
 
 #health p {
@@ -347,6 +347,7 @@ article {
     .slide-btn {
         background-color: var(--tan);
         clip-path: circle(50%);
+        cursor: pointer;
         width: 20px;
         height: 20px;
     }
