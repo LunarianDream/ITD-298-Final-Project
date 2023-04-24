@@ -1,0 +1,418 @@
+:root {
+    --lime-green: #D0EFB1;
+    --black-purple: #1A090D;
+    --whitish-grey: #EAEAEA;
+    --violet: #9F84BD;
+    --tan: #E8DAB2;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--whitish-grey);
+    color: var(--black-purple);
+    font-family: 'Farro', sans-serif;
+    font-size: 18px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.thumbnail {
+	width: 23%;
+	text-align: center;
+	float: left;
+	margin-top: 35px;
+	background-color: #F8F8F8;
+	padding-bottom: 20px;
+	margin-left: 1%;
+	margin-right: 1%;
+	border-radius: 3px;
+	padding-top: 20px;
+	border-bottom: 4px solid #6DC7D0;
+	font-family: 'Cormorant', sans-serif;
+	color: black;
+}
+.gallery .thumbnail h4 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: black;
+	text-align: left;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-family: 'Farro', sans-serif, bold;
+}
+.gallery .thumbnail p {
+	margin: 0;
+	color: 090000;
+	text-align: left;
+	padding-left: 20px;
+}
+.cards {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    max-height: 200px;
+}
+.gallery .thumbnail .tag {
+	color: 090000;
+	padding-bottom: 4px;
+	padding-top: 4px;
+	text-align: left;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+header, footer {
+    background-color: var(--lime-green);
+    z-index: 100;
+}
+
+header > h1 {
+    font-family: 'Poiret One', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    width: 100%;
+}
+
+.logo-frame {
+    margin: 10px;
+}
+
+.logo-frame > img {
+    width: 100px;
+}
+
+/* ======== Top Navigation Styles ======== */ 
+
+.menu-close, .hamburger-icon {
+    background-color: var(--lime-green);
+    border: none;
+    border-left: 1px solid white;
+    color: var(--violet);
+    font-size: 1.5em;
+    text-decoration: underline;
+    outline: transparent;
+}
+
+.hamburger-icon, .menu-close {
+    box-shadow: 2px 2px 10px transparent inset,
+                -2px -2px 10px transparent inset;
+    font-size: 2em;
+    margin: 10px;
+    padding: 0px 5px;
+    text-decoration: none;
+}
+
+
+ /* ======== Main Menu ======== */
+
+
+
+#off-canvas-menu{
+    background-color: var(--tan);
+    width: 80vw;
+    height: 100vh;
+}
+
+#off-canvas-menu > ul li {
+    list-style: none;
+    margin: 2em;
+}
+
+#off-canvas-menu > ul li a {
+    color: var(--violet);
+    font-size: 1.5em;
+    padding: .5em 1em .5em 1em;
+    text-decoration: none;
+  
+}
+
+.menu-close {
+    background-color: transparent;
+}
+
+.menu-overlay {
+    background-color: white;
+    backdrop-filter: blur(10px);
+    display: none;
+    height: 100vh;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 998;
+
+}
+
+/* ======== Buttons ======== */
+
+
+
+main button {
+    background-color: var(--violet);
+    border: none;
+    border-radius: 10px;
+    color: var(--whitish-grey);
+    cursor: pointer;
+    font-weight: bold;
+    padding-bottom: .5em;
+    padding-top: .5em;
+    animation-direction: reverse;
+    transition: 500ms linear;
+    width: 150px
+}
+
+main button:hover {
+    background-color: var(--tan);
+    color: var(--violet);
+    text-decoration: underline;
+    animation-direction: normal;
+    transition: 500ms linear;
+}
+
+.booking {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .5em;
+}
+
+/* ======== Main Styles ======== */
+
+.mobile-image {
+    margin-bottom: .5em;
+    width: 90vw;
+}
+
+/* ======== Footer ======== */
+
+.mobile-footer {
+    text-align: center;
+}
+
+.desktop-footer {
+    display: none;
+}
+
+.contact-details h2 {
+    color: var(--violet);
+    font-size: 1em;
+    margin-bottom: 1em;
+    text-decoration: underline;
+
+}
+
+.contact-details a {
+    color: var(--black-purple);
+    font-size: .8em;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+address {
+    font-style: normal;
+    font-size: .8em;
+}
+
+.copyright {
+    font-size: .5em;
+}
+
+/* ================= Tablet View =============== 
+================================================ */
+
+@media only screen and (min-width: 600px) and (max-width: 1079px) {
+
+    /* ======== Header ======== */ 
+
+    header > h1 {
+        font-size: 2.5em;
+    }
+
+    /* ======== Footer ======== */
+
+    .desktop-footer {
+        display: block;
+        padding: 1em;
+    }
+
+    .contact-details {
+        font-size: .6em;
+    }
+
+    .copyright > span {
+        font-size: .8em;
+    }
+
+    .team {
+        font-size: .6em;
+        width: 50%;
+    }
+
+    .team > span {
+        font-size: .7em;
+        padding-right: 1em;
+    }
+
+    .team > ul {
+        margin-top: 1em;
+    }
+
+    .team > ul li {
+        color: var(--violet);
+        font-size: .8em;
+        list-style: none;
+        margin-bottom: .8em;
+    }
+	
+.logo {
+	width: 100%;
+	text-align: center;
+	margin-top: 13px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+.text_column {
+	width: 100%;
+	text-align: left;
+	padding: 0;
+}
+.thumbnail {
+	width: 100%;
+}
+.column {
+	width: 100%;
+	margin-top: 0px;
+}
+.thumbnail {
+	width: 100%;
+}
+.text_column {
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 90%;
+}
+.column {
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.profile {
+	width: 100%;
+}
+.intro .column p {
+	width: 90%;
+	text-align: center;
+	padding-left: 0px;
+}
+}
+
+/* ================= Desktop View =============== 
+================================================ */
+
+@media only screen and (min-width: 1080px) {
+
+    header {
+        background-color: transparent;
+    }
+
+    header > h1 {
+        font-size: 5em;
+        font-weight: 100;
+        margin-top: 1%;
+        text-shadow: 0px 5px 5px black;
+    }
+
+    .logo-frame {
+        display: none;
+    }
+
+    .logo-frame > img {
+        width: 100%;
+    }
+	
+	.text_column {
+	width: 100%;
+}
+.thumbnail {
+	width: 48%;
+}
+.text_column {
+	width: 90%;
+	margin: 0;
+	padding: 20px;
+}
+.intro .column p {
+	width: 80%;
+}
+}
+
+    /* ======== Top Navigation ======== */ 
+
+    .top-navigation {
+        width: 100%;
+    }
+
+    .top-links li {
+        display: inline;
+        list-style: none;
+    }
+
+    .top-links li button {
+        background-color: var(--lime-green);
+        border: none;
+        border: 1px solid white;
+        color: var(--violet);
+        font-size: 1em;
+        font-weight: 100;
+        padding: .5em 1em .5em 1em;
+        text-decoration: underline;
+        min-width: 175px;
+    }
+
+    .top-links li button:hover {
+        background-color: var(--violet);
+        color: var(--lime-green);
+
+    }
+
+    /* ======== Footer ======== */ 
+
+    .desktop-footer {
+        display: block;
+        padding: 1em;
+    }
+
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        text-align: center;
+    }
+
+    .team {
+        width: 50%;
+    }
+
+    .team > span {
+        font-size: .7em;
+        padding-right: 1em;
+    }
+
+    .team > ul {
+        margin-top: 1em;
+    }
+
+    .team > ul li {
+        color: var(--violet);
+        font-size: .8em;
+        list-style: none;
+        margin-bottom: .8em;
+    }
