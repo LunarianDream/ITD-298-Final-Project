@@ -87,9 +87,7 @@ textarea {
 
 @media only screen and (min-width: 600px) {
 
-    video {
-        width: 50%;
-    }
+
 
     form {
         width: 100%;
@@ -116,6 +114,10 @@ textarea {
 }
 
 @media only screen and (min-width: 1080px) {
+
+    video {
+        width: 50%;
+    }
 
     form {
         width: 80vw;
