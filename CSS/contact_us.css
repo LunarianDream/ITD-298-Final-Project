@@ -3,7 +3,7 @@ main {
     margin-inline: .5em;
 }
 
-img {
+.profile-pic img {
     width: 60%;
     margin-inline: auto;
 }

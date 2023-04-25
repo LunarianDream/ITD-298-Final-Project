@@ -29,7 +29,7 @@ header {
  /* ======== Main Menu ======== */
 
 #off-canvas-menu {
-    position: absolute;
+    position: fixed;
     z-index: 999;
 
     display: flex;

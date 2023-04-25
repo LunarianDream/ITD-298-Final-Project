@@ -33,6 +33,28 @@ button {
     cursor: pointer;
 }
 
+.page-arrow {
+    background-color: transparent;
+    border: none;
+    height: 50px;
+    padding: 0;
+    position: fixed;
+    right: 5px;
+    z-index: 101;
+}
+
+.up {
+    top: 125px;
+}
+
+.down {
+    bottom: 25px;
+}
+
+.page-nav-image {
+    height: 100%
+}
+
 header, footer {
     background-color: var(--lime-green);
     z-index: 100;
@@ -278,6 +300,10 @@ address {
 
     .logo-frame > img {
         width: 100%;
+    }
+
+    .up {
+        top: 50px;
     }
 
     /* ======== Top Navigation ======== */ 
