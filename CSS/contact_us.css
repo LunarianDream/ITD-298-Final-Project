@@ -82,7 +82,7 @@ p {
         margin-inline: 1em;
     }
 
-    img {
+    .profile-pic > img {
         width: 100%;
     }
 
