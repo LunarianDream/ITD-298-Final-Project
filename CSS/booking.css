@@ -2,6 +2,12 @@ main {
     gap: 1em;
 }
 
+video {
+    display: block;
+    margin-inline: auto;
+    width: 100%;
+}
+
 form {
     background-color: var(--tan);
     margin-inline: auto;
@@ -80,7 +86,10 @@ textarea {
 }
 
 @media only screen and (min-width: 600px) {
-    
+
+    video {
+        width: 50%;
+    }
 
     form {
         width: 100%;
