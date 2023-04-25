@@ -9,12 +9,12 @@ video {
 }
 
 form {
-    background-color: var(--tan);
     margin-inline: auto;
     width: 90%
 }
 
 fieldset {
+    background-color: var(--tan);
     border: 2px solid var(--black-purple);
     padding: 1em;
 }

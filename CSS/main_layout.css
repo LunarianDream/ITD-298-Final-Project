@@ -2,7 +2,6 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 250px, auto, 2fr;
-    /* gap: .5em; */
     position: relative;
 }
 

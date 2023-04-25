@@ -22,9 +22,8 @@ main {
     flex-direction: column;
     gap: 1em;
     justify-content: space-between;
-    padding-bottom: 1em;
-    padding-inline: .5em;
-    padding-top: .5em;
+    margin-inline: .5em;
+    padding: .5em .5em 1em .5em;
 }
 
 .profile:last-of-type {
