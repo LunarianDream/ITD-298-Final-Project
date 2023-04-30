@@ -4,6 +4,7 @@ main {
 }
 
 .profile-pic img {
+    cursor: pointer;
     width: 60%;
     margin-inline: auto;
 }
@@ -81,7 +82,7 @@ p {
         margin-inline: 1em;
     }
 
-    .profile-pic > img {
+    .profile-pic img {
         width: 100%;
     }
 
